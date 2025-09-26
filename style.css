@@ -14,30 +14,29 @@ body {
 }
 
 h1 {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-.pictures {
+.buttons {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto 30px auto;
 }
 
-.pictures img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain; /* ✅ Show full picture */
-  border: 2px solid #000;
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
-  background: #fff;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: #333;
+  color: white;
+  transition: background 0.3s;
 }
 
-.pictures img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+button:hover {
+  background: #555;
 }
 
 .video-container {
@@ -47,10 +46,10 @@ h1 {
 video {
   width: 400px;
   max-width: 100%;
-  display: none; /* ✅ Hidden by default */
+  display: none;
 }
 
-/* ✅ Watermark */
+/* ✅ Watermark styling */
 .watermark {
   position: absolute;
   bottom: 10px;
