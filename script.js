@@ -1,12 +1,12 @@
-function playVideo(answer) {
+function showVideo() {
+  const pictures = document.getElementById('pictures');
   const video = document.getElementById('videoPlayer');
 
-  if (answer === 'yes') {
-    video.src = 'yes.mp4'; // replace with your YES video file
-  } else {
-    video.src = 'no.mp4'; // replace with your NO video file
-  }
+  // hide the pictures
+  pictures.style.display = "none";
 
+  // show and play the video
+  video.src = "video.mp4"; // ✅ put your video file here
   video.style.display = "block";
   video.play();
 }
