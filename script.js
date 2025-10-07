@@ -1,16 +1,12 @@
-function showVideo() {
-  const pictures = document.getElementById('pictures');
+function playVideo(answer) {
   const video = document.getElementById('videoPlayer');
-  const title = document.getElementById('title');
 
-  // change the title text
-  title.textContent = "SYEMPRE IKAW PARIN!!!";
+  if (answer === 'yes') {
+    video.src = 'yes.mp4'; // replace with your YES video file
+  } else {
+    video.src = 'no.mp4'; // replace with your NO video file
+  }
 
-  // hide pictures
-  pictures.style.display = "none";
-
-  // show and play video
-  video.src = "vid.mp4"; // ✅ put your video filename here
   video.style.display = "block";
   video.play();
 }
