@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahal Mo Pa Ba?</title>
+  <title>Sino Mas Gwapo?</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>MAHAL MO PA BA?</h1>
-    <div class="buttons">
-      <button onclick="playVideo('yes')">YES</button>
-      <button onclick="playVideo('no')">NO</button>
+    <h1 id="title">SINO MAS MAGANDA?</h1>
+    <div class="pictures" id="pictures">
+      <img src="pic1.jpg" alt="PIC1" onclick="showVideo()">
+      <img src="pic2.jpg" alt="PIC2" onclick="showVideo()">
+      <img src="pic3.jpg" alt="PIC3" onclick="showVideo()">
     </div>
     <div class="video-container">
       <video id="videoPlayer" controls></video>
